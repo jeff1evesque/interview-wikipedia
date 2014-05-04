@@ -63,7 +63,77 @@ $( "button" ).click(function() {
         }        
     });
 
-// algorithm
+// functions
+
+    function algorithm(var1, var2) {      
+      // left to right case
+        if (parseInt(var1)-1 >= 0 && parseInt(var1)-2 >= 0 && parseInt(var1)-3 >= 0 && arrBoard[parseInt(var1)-1][var2] != null && arrBoard[parseInt(var1)-2][var2] != null && arrBoard[parseInt(var1)-3][var2] != null && arrBoard[var1][var2] == arrBoard[parseInt(var1)-1][var2] && arrBoard[var1][var2] == arrBoard[parseInt(var1)-2][var2] && arrBoard[var1][var2] == arrBoard[parseInt(var1)-3][var2]) { 
+            alert(arrBoard[var1][var2] + " has just won the game!");
+            reset();
+        }
+        
+        if (parseInt(var1)-1 >= 0 && parseInt(var1)-2 >= 0 && parseInt(var1)+1 >= 0 && arrBoard[parseInt(var1)-1][var2] != null && arrBoard[parseInt(var1)-2][var2] != null && arrBoard[parseInt(var1)+1][var2] != null && arrBoard[var1][var2] == arrBoard[parseInt(var1)-1][var2] && arrBoard[var1][var2] == arrBoard[parseInt(var1)-2][var2] && arrBoard[var1][var2] == arrBoard[parseInt(var1)+1][var2]) { 
+            alert(arrBoard[var1][var2] + " has just won the game!");
+            reset();
+        }
+        
+        if (parseInt(var1)-1 >= 0 && parseInt(var1)+1 >= 0 && parseInt(var1)+2 >= 0 && arrBoard[parseInt(var1)-1][var2] != null && arrBoard[parseInt(var1)+1][var2] != null && arrBoard[parseInt(var1)+2][var2] != null && arrBoard[var1][var2] == arrBoard[parseInt(var1)-1][var2] && arrBoard[var1][var2] == arrBoard[parseInt(var1)+1][var2] && arrBoard[var1][var2] == arrBoard[parseInt(var1)+2][var2]) { 
+            alert(arrBoard[var1][var2] + " has just won the game!");
+            reset();
+        }
+ 
+      // right to left case
+        if (parseInt(var1)+1 < num_cells_x && parseInt(var1)+2 < num_cells_x && parseInt(var1)+3 < num_cells_x && var1 >= 0 && arrBoard[var1][var2] != null && arrBoard[var1][var2] != null && arrBoard[parseInt(var1)+1][var2] != null && arrBoard[parseInt(var1)+2][var2] != null && arrBoard[parseInt(var1)+3][var2] != null && arrBoard[var1][var2] == arrBoard[parseInt(var1)+1][var2] && arrBoard[var1][var2] == arrBoard[parseInt(var1)+2][var2] && arrBoard[var1][var2] == arrBoard[parseInt(var1)+3][var2]) {
+            alert(arrBoard[var1][var2] + " has just won the game!");
+            reset();
+        }
+
+     // top to bottom case
+        if (parseInt(var2)-1 < num_cells_y && parseInt(var2)-2 < num_cells_y && parseInt(var2)-3 < num_cells_y && arrBoard[var1][parseInt(var2)-1] != null && arrBoard[var1][parseInt(var2)-2] != null  && arrBoard[var1][parseInt(var2)-3] != null && arrBoard[var1][var2] == arrBoard[var1][parseInt(var2)-1] && arrBoard[var1][var2] == arrBoard[var1][parseInt(var2)-2] && arrBoard[var1][var2] == arrBoard[var1][parseInt(var2)-3]) {
+            alert(arrBoard[var1][var2] + " has just won the game!");
+            reset();
+        }
+        
+      // top-right to bottom-left
+        if (parseInt(var1)-1 >=0 && parseInt(var1)-2 >=0 && parseInt(var1)-3 >=0 && arrBoard[parseInt(var1)][parseInt(var2)] != null && arrBoard[parseInt(var1)-1][parseInt(var2)-1] != null && arrBoard[parseInt(var1)-2][parseInt(var2)-2] != null && arrBoard[parseInt(var1)-3][parseInt(var2)-3] != null && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-1][parseInt(var2)-1] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-2][parseInt(var2)-2] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-3][parseInt(var2)-3]) {
+            alert(arrBoard[var1][var2] + " has just won the game!");
+            reset();
+        }
+        
+         if (parseInt(var1)-1 >=0 && parseInt(var1)-2 >=0 && parseInt(var1)+1 >=0 && arrBoard[parseInt(var1)][parseInt(var2)] != null && arrBoard[parseInt(var1)-1][parseInt(var2)-1] != null && arrBoard[parseInt(var1)-2][parseInt(var2)-2] != null && arrBoard[parseInt(var1)+1][parseInt(var2)+1] != null && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-1][parseInt(var2)-1] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-2][parseInt(var2)-2] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+1][parseInt(var2)+1]) {
+            alert(arrBoard[var1][var2] + " has just won the game!");
+            reset();
+        }
+        
+        if (parseInt(var1)-1 >=0 && parseInt(var1)+1 >=0 && parseInt(var1)+2 >=0 && arrBoard[parseInt(var1)][parseInt(var2)] != null && arrBoard[parseInt(var1)-1][parseInt(var2)-1] != null && arrBoard[parseInt(var1)+1][parseInt(var2)+1] != null && arrBoard[parseInt(var1)+2][parseInt(var2)+2] != null && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-1][parseInt(var2)-1] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+1][parseInt(var2)+1] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+2][parseInt(var2)+2]) {
+            alert(arrBoard[var1][var2] + " has just won the game!");
+            reset();
+        }
+        
+      // top-left to bottom-right
+        if (parseInt(var1)+1 < num_cells_x && parseInt(var1)+2 < num_cells_x && parseInt(var1)+3 < num_cells_x && arrBoard[parseInt(var1)][parseInt(var2)] != null && arrBoard[parseInt(var1)+1][parseInt(var2)-1] != null && arrBoard[parseInt(var1)+2][parseInt(var2)-2] != null && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+1][parseInt(var2)-1] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+2][parseInt(var2)-2] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+3][parseInt(var2)-3]) {
+            alert(arrBoard[parseInt(var1)][parseInt(var2)] + " has just won the game!");
+            reset();
+        }
+        
+        if (parseInt(var1)+1 < num_cells_x && parseInt(var1)+2 < num_cells_x && parseInt(var1)-1 < num_cells_x && arrBoard[parseInt(var1)][parseInt(var2)] != null && arrBoard[parseInt(var1)+1][parseInt(var2)-1] != null && arrBoard[parseInt(var1)-1][parseInt(var2)+1] != null && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+1][parseInt(var2)-1] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+2][parseInt(var2)-2] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-1][parseInt(var2)+1]) {
+            alert(arrBoard[parseInt(var1)][parseInt(var2)] + " has just won the game!");
+            reset();
+        }
+        
+         if (parseInt(var1)+1 < num_cells_x && parseInt(var1)-1 < num_cells_x && parseInt(var1)-2 < num_cells_x && arrBoard[parseInt(var1)][parseInt(var2)] != null && arrBoard[parseInt(var1)-1][parseInt(var2)+1] != null && arrBoard[parseInt(var1)-2][parseInt(var2)+2] != null && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)+1][parseInt(var2)-1] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-1][parseInt(var2)+1] && arrBoard[parseInt(var1)][parseInt(var2)] == arrBoard[parseInt(var1)-2][parseInt(var2)+2]) {
+            alert(arrBoard[parseInt(var1)][parseInt(var2)] + " has just won the game!");
+            reset();
+        }
+    }
+
+function draw(ctx) {
+    ctx.beginPath();
+    ctx.arc( (canvas_cell * parseInt(column_current)+1 ) + (canvas_cell/2)-1, ( (num_cells_y - rowLevel[column_current]+1)  * canvas_cell)  - (canvas_cell/2), (canvas_cell/2)-2, 0, Math.PI*2, true); 
+    ctx.closePath();
+    ctx.fillStyle = (arrBoard[column_current][rowLevel[column_current]] == "player-1" ) ? "blue" : "red";
+    ctx.fill();  
+}
 
 function gridSetup() {
     for(i=0; i <= num_cells_x; i++) {
