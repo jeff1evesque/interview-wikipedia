@@ -34,6 +34,34 @@ flag_player = false; // indicate current player
     gridSetup();
 
 // button actions
+$( "button" ).click(function() {
+        
+        column_current = this.className.substring(7);
+        
+        if (flag_player) {
+            flag_player = false;
+        
+            while (arrBoard[column_current][rowLevel[column_current]] != null || row_current < num_cells_y) {
+                rowLevel[column_current]++;
+                break;
+            }
+            arrBoard[column_current][rowLevel[column_current]] = "player-2";
+            draw(ctx);
+            algorithm(column_current, rowLevel[column_current]);
+        }
+        else {
+            row_current = 0;
+            flag_player = true;
+
+            while (arrBoard[column_current][rowLevel[column_current]] != null || row_current < num_cells_y) {
+                rowLevel[column_current]++;
+                break;
+            }
+            arrBoard[column_current][rowLevel[column_current]] = "player-1";
+            draw(ctx);
+            algorithm(column_current, rowLevel[column_current]);
+        }        
+    });
 
 // algorithm
 
