@@ -7,6 +7,8 @@
  * This file contains the logic component for the 'connect-four' game'
  */
 
+$( document ).ready(function() {
+
 // variables & arrays
 
 // setting up grid
@@ -15,4 +17,4 @@
 
 // algorithm
 
-
+});
