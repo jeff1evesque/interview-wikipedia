@@ -135,6 +135,18 @@ function draw(ctx) {
     ctx.fill();  
 }
 
+function reset() {
+    for(i = 0; i < arrBoard.length; i++) {
+        arrBoard[i] = new Array(num_cells_y);
+        for(j = 0; j < arrBoard[num_cells_y]; j++) {
+            arrBoard[i][j] = null;
+        }
+    }
+    
+    ctx.clearRect(0, 0, canvas_width, canvas_height);
+    gridSetup();
+}
+
 function gridSetup() {
     for(i=0; i <= num_cells_x; i++) {
     
