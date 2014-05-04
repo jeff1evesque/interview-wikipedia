@@ -10,7 +10,6 @@
 $( document ).ready(function() {
 
 // variables & arrays
-// variables & arrays
 var num_cells_x = 8; var num_cells_y = 7;
 var canvas_width = 480; var canvas_height = 420; canvas_cell = canvas_cell = 60;
 
