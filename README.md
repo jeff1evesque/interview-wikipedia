@@ -1,7 +1,7 @@
 connect-four
 ============
 
-Connect Four Game, written with javascript.
+Connect Four Game, written in javascript.
 
 I recently had an interview with Wikipedia doing their coding exercise:
 
