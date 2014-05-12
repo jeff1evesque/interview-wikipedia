@@ -5,17 +5,19 @@ I had an interview with Wikimedia (commonly known for Wikipedia), and was given 
 
 http://jsfiddle.net/jeff1evesque/8jy57/26/
 
+---
+
 For more clarification on the interview exercise, please refer to the following specification:
 
 https://gist.github.com/jgonera/4cf21a3abcbeb62a9dfb
 
-I have imported what I initially submitted for my interview.  I may enhance this application.  In the meantime,  free free to use, or improve what I have.
+I have imported what I initially submitted for my interview, and may enhance this application.  In the meantime,  free free to use, or improve what I have.
 
 ##Connect Four, written in JavaScript
 
 ###Definition:
 
-Connect Four is a two-player connection game in which the players first choose a color and then take turns dropping colored discs from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The object of the game is to connect four of one's own discs of the same color next to each other vertically, horizontally, or diagonally before your opponent.
+*Connect Four is a two-player connection game in which the players first choose a color and then take turns dropping colored discs from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The object of the game is to connect four of one's own discs of the same color next to each other vertically, horizontally, or diagonally before your opponent.*
 
 - http://en.wikipedia.org/wiki/Connect_Four
 
