@@ -5,13 +5,11 @@ I had an interview with Wikimedia (commonly known for Wikipedia), and was given 
 
 http://jsfiddle.net/jeff1evesque/8jy57/26/
 
----
-
 For more clarification on the interview exercise, please refer to the following specification:
 
 https://gist.github.com/jgonera/4cf21a3abcbeb62a9dfb
 
-*Note: I have imported what I initially submitted for my interview, and may enhance this application.  In the meantime,  free free to use, or improve what I have.*
+*Note: I have imported what I initially submitted for my interview, and may enhance this application.  In the meantime, feel free to use, or improve what I have.*
 
 ##Connect Four, written in JavaScript
 
